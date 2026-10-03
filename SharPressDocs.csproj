@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharPress" Version="0.1.0-preview.10" />
+  </ItemGroup>
+
+  <!-- Publish the whole site folder. By default only sharpress.json is copied, not the .md, .svg and .css files. -->
+  <ItemGroup>
+    <Content Remove="SharpLib\**" />
+    <Content Include="SharpLib\**" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

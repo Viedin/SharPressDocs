@@ -1,0 +1,62 @@
+{
+  "title": "SharPress",
+  "logo": "/logo.svg",
+  "favicon": "/favicon.svg",
+  "sidebarTitle": "Documentation",
+
+  "home": {
+    "hero": {
+      "image": "/logo.svg",
+      "name": "SharPress",
+      "text": "Markdown docs for ASP.NET Core.",
+      "tagline": "Serve a folder of Markdown files as a documentation site from your app. No Node, no build step.",
+      "actions": [
+        { "text": "Get started", "link": "/docs/getting-started" },
+        { "text": "GitHub", "link": "https://github.com/Viedin/SharPress", "theme": "alt" }
+      ]
+    },
+    "features": [
+      { "icon": "lightning-charge", "title": "No build step", "details": "Rendered per request. Save, refresh.", "link": "/docs/writing-content" },
+      { "icon": "layout-sidebar", "title": "Docs layout", "details": "Sidebar, outline, prev/next, home page, mobile menu.", "link": "/docs/settings" },
+      { "icon": "palette", "title": "Themes", "details": "Light and dark. Override with CSS variables.", "link": "/docs/theming" },
+      { "icon": "signpost-split", "title": "Any URL", "details": "Root, sub-path, or next to MVC and Razor Pages.", "link": "/docs/urls" },
+      { "icon": "shield-lock", "title": "Sign-in", "details": "Uses your app's authentication and policies.", "link": "/docs/authorization" },
+      { "icon": "database", "title": "Custom sources", "details": "Read pages from a database or CMS.", "link": "/docs/content-sources" }
+    ]
+  },
+
+  "sidebar": [
+    {
+      "text": "Guide",
+      "items": [
+        { "link": "/docs/getting-started" },
+        { "link": "/docs/writing-content" },
+        { "link": "/docs/static-files" },
+        { "link": "/docs/theming" }
+      ]
+    },
+    {
+      "text": "Reference",
+      "items": [
+        { "link": "/docs/settings" },
+        { "link": "/docs/options" }
+      ]
+    },
+    {
+      "text": "Hosting",
+      "items": [
+        { "link": "/docs/urls" },
+        { "link": "/docs/authorization" },
+        { "link": "/docs/content-sources" },
+        { "link": "/docs/deployment" }
+      ]
+    },
+    {
+      "text": "Links",
+      "items": [
+        { "text": "NuGet", "link": "https://www.nuget.org/packages/SharPress" },
+        { "text": "GitHub", "link": "https://github.com/Viedin/SharPress" }
+      ]
+    }
+  ]
+}
