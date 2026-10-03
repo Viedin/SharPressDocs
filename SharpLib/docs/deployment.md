@@ -2,6 +2,9 @@
 
 Deploy as any ASP.NET Core app. SharPress-specific concerns below.
 
+Example: [this site's repo](https://github.com/Viedin/SharPressDocs) (native AOT Docker image, Docker Compose,
+Cloudflare Tunnel).
+
 ## Publish SharpLib
 
 `dotnet publish` copies only `.json` files from `SharpLib/` by default. Without `docs/`, the published app
