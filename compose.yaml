@@ -1,0 +1,17 @@
+services:
+  docs:
+    build: .
+    image: sharpressdocs
+    restart: unless-stopped
+    environment:
+      # Trust X-Forwarded-Proto/For from cloudflared.
+      ASPNETCORE_FORWARDEDHEADERS_ENABLED: "true"
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN}
+    depends_on:
+      - docs
